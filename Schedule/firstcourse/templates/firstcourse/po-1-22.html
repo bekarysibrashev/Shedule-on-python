@@ -1,0 +1,65 @@
+{% extends 'firstcourse/base1.html' %}
+{% load static %}
+
+
+{% block title %}PO-1-22{% endblock %}
+
+
+
+
+{% block intro %} 
+<div class="intro"> PO 1-22 </div>
+{% endblock %}
+
+
+
+{% block content %}
+    <table class="schedule">
+       
+        <tr class='times'>
+          
+            <th class="time"><b>TIME</b></th>
+            <td>MONDAY</td>
+            <td>TUESDAY</td>
+            <td>WEDNESDAY</td>
+            <td>THURSDAY</td>
+            <td>FRIDAY</td>
+
+        </tr>
+
+
+        {% for i in schedule %}    
+        <tr class='success'>       
+            <th class="tim">{{ i.time }}</th>
+            <th><b><div class="cell">{{ i.monday }}</div>{{i.teacher_room1}}</b></th>
+            <th><b><div class="cell">{{ i.tuesday }}</div> {{ i.teacher_room2}}</b></th>
+            <th><b><div class="cell">{{ i.wednesday }}</div> {{ i.teacher_room3}}</b></th>
+            <th><b><div class="cell">{{ i.thursday }}</div> {{ i.teacher_room4}}</b></th>
+            <th><b><div class="cell">{{ i.friday }}</div> {{ i.teacher_room5}}</b></th>
+            
+        </tr>
+        {% endfor %}
+
+    </table>
+
+
+{% endblock %}
+
+
+
+   
+
+
+<!-- 
+{% for i in schedule %}
+        
+<tr class='success'>
+    <th class="day"><b>{{ i.day }}</b></th>
+    <th><div class="block">{{ i.first }}</div> {{ i.teacher_room1 }}  <div class="time">{{ i.time1 }}</div></th>
+    <th><div class="block">{{ i.second }}</div>  {{ i.teacher_room2 }}  <div class="time">{{ i.time2 }}</div></th>
+    <th><div class="block">{{ i.third }} </div> {{ i.teacher_room3 }}   <div class="time">{{ i.time3 }}</div></th>
+    <th><div class="block">{{ i.fourth }}</div>  {{ i.teacher_room4 }}    <div class="time">{{ i.time4 }}</div></th>
+    <th><div class="block">{{ i.fifth }}</div>  {{ i.teacher_room5 }}    <div class="time">{{ i.time5 }}</div></th>
+    <th><div class="block">{{ i.sixth }}</div>  {{ i.teacher_room6 }}    <div class="time">{{ i.time6 }}</div></th>
+</tr>
+{% endfor %} -->

@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <div class="buttonn">
+    <a  href='/'>На Главную</a> 
+    </div>
+    <div class="selector">
+        <legend class="legend">Выберите группу</legend>
+        </div>
+        <select class="select-css" onchange="document.location=this.options[this.selectedIndex].value">
+            <option>Группа</option>
+            <option value="ПО 1-22">ПО 1-22</option>
+            <option value="ПО 2-22">ПО 2-22</option>
+            <option value="ПО 3-22">ПО 3-22</option>
+            <option value="БНГС 1-22">БНГС 1-22</option>
+            <option value="ЭНГМ 1-22">ЭНГМ 1-22</option>
+            <option value="ЭНГМ 2-22">ЭНГМ 2-22</option>
+            <option value="АиУ 1-22">АиУ 1-22</option>
+            <option value="АиУ 2-22">АиУ 2-22</option>
+            <option value="ХТП 1-22">ХТП 2-22</option>
+            <option value="ХТП 2-22">ХТП 2-22</option>
+            <option value="ХТП 3-22">ХТП 3-22</option>
+            <option value="ЭС 1-22">ЭС 1-21</option>
+            <option value="ЭС 2-22">ЭС 2-21</option>
+            <option value="МЕХ 1-22">МЕХ 1-21</option>
+            <option value="МЕХ 2-22">МЕХ 2-21</option>
+            <option value="ТДНГ 1-22">ТДНГ 1-21</option>
+          </select>
+        
+
+{% block select %}{% endblock %}
+{% block intro %}{% endblock %}
+{% block content %}{% endblock %}
+
+{% block a %}{% endblock %}
+</body>
+</html>

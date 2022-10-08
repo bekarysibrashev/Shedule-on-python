@@ -1,0 +1,21 @@
+{% extends 'App/base.html' %}
+
+{% block title %}Главная{% endblock %}
+
+
+{% block content %}
+<legend class="legend">Выберите курс</legend>
+    <select class="select-css" onchange="document.location=this.options[this.selectedIndex].value">  
+      <option>Курс</option>
+      <option value="1 course">1 курс</option>
+      <option value="2 course">2 курс</option>
+      <option value="3 course">3 курс</option>
+      <option value="4 course">4 курс</option>
+    </select>
+
+{% endblock %}
+
+{% block a %}
+  
+
+{% endblock %}

@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 courses</title>
+</head>
+<body>
+    <legend class="legend">Выберите группу</legend>
+    <select class="select-css" onchange="document.location=this.options[this.selectedIndex].value">
+     <!-- В value записывется url path к странице какой либо группы 
+         Для добавления группы в список, надо скопировать (<option value="1 course">1 курс</option>) 
+        и вставить ниже. Не забыть поменять названия и путь. Не забыть сделать страницу и добавить путь
+     -->
+      <option>Группа</option>
+      <option value="ПО 1-21">ПО 1-21</option>
+      <option value="БНГС 1-21">БНГС 1-21</option>
+      <option value="ЭНГМ 1-21">ЭНГМ 1-21</option>
+      <option value="АиУ 1-21">АиУ 1-21</option>
+      <option value="ХТП 11-21">ХТП 11-21</option>
+      <option value="ХТП 1-21">ХТП 1-21</option>
+      <option value="ЭС 1-21">ЭС 1-21</option>
+      <option value="ЭС 2-21">ЭС 2-21</option>
+      <option value="МЕХ 1-21">МЕХ 1-21</option>
+      <option value="МЕХ 2-21">МЕХ 2-21</option>
+      <option value="ТДНГ 1-21">ТДНГ 1-21</option>
+    </select>
+
+</body>
+</html>

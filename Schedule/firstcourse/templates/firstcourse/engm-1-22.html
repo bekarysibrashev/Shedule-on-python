@@ -1,0 +1,49 @@
+{% extends 'firstcourse/base1.html' %}
+{% load static %}
+
+
+{% block title %}ЭНГМ 1-22 {% endblock %}
+
+
+
+
+{% block intro %} 
+<div class="intro"> ЭНГМ 1-22 </div>
+{% endblock %}
+
+
+
+{% block content %}
+    <table class="schedule">
+       
+        <tr class='times'>
+          
+            <th class="time"><b>TIME</b></th>
+            <td>MONDAY</td>
+            <td>TUESDAY</td>
+            <td>WEDNESDAY</td>
+            <td>THURSDAY</td>
+            <td>FRIDAY</td>
+
+        </tr>
+
+
+        {% for i in schedule %}    
+        <tr class='success'>       
+            <th class="tim">{{ i.time }}</th>
+            <th><b><div class="cell">{{ i.monday }}</div>{{i.teacher_room1}}</b></th>
+            <th><b><div class="cell">{{ i.tuesday }}</div> {{ i.teacher_room2}}</b></th>
+            <th><b><div class="cell">{{ i.wednesday }}</div> {{ i.teacher_room3}}</b></th>
+            <th><b><div class="cell">{{ i.thursday }}</div> {{ i.teacher_room4}}</b></th>
+            <th><b><div class="cell">{{ i.friday }}</div> {{ i.teacher_room5}}</b></th>
+        </tr>
+        {% endfor %}
+
+    </table>
+
+
+{% endblock %}
+
+
+
+   
