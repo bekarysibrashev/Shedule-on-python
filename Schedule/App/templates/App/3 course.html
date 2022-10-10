@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 courses</title>
+</head>
+<body>
+    <a  href='/'>На Главную</a>
+    <legend class="legend">Выберите группу</legend>
+    <select class="select-css" onchange="document.location=this.options[this.selectedIndex].value">
+        <option>Группа</option>
+        <option value="АиУ 1-20">АиУ 1-20</option>
+        <option value="БНГС 1-20">БНГС 1-20</option>
+        <option value="ЭС 1-20">ЭС 1-20</option>
+        <option value="ЭС 2-20">ЭС 2-20</option>
+        <option value="ЭС 3-20">ЭС 3-20</option>
+        <option value="ЭНГМ 1-20">ЭНГМ  1-20</option>
+        <option value="ЭНГМ 2-20">ЭНГМ 2-20</option>
+        <option value="ИС 1-20">ИС 1-20</option>
+        <option value="ИС 2-20">ИС 2-20</option>
+        <option value="КИП 3-20">КИП 3-20</option>
+        <option value="КИП 4-20">КИП 4-20</option>
+        <option value="КИП 11-20">КИП 11-20</option>
+        <option value="ТХИ 1-20">ТХИ 1-20</option>
+        <option value="ТХИ 2-20">ТХИ 2-20</option>
+        <option value="ТХИ 3-20">ТХИ 3-20</option>
+      </select>
+</body>
+</html>

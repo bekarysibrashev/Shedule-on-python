@@ -1,0 +1,50 @@
+{% extends 'fourthcourse/base1.html' %}
+{% load static %}
+
+
+{% block title %}ЭС 3-19{% endblock %}
+
+
+
+
+{% block intro %} 
+<div class="intro"> ЭС 3-19 </div>
+{% endblock %}
+
+
+
+{% block content %}
+    <table class="schedule">
+       
+        <tr class='times'>
+          
+            <th class="time"><b>TIME</b></th>
+            <td>MONDAY</td>
+            <td>TUESDAY</td>
+            <td>WEDNESDAY</td>
+            <td>THURSDAY</td>
+            <td>FRIDAY</td>
+
+        </tr>
+
+
+        {% for i in schedule %}    
+        <tr class='success'>       
+            <th class="tim">{{ i.time }}</th>
+            <th><b><div class="cell">{{ i.monday }}</div> <div class="teacher">{{ i.teacher_room1}}</div></b></th>
+            <th><b><div class="cell">{{ i.tuesday }}</div> <div class="teacher">{{ i.teacher_room2}}</div></b></th>
+            <th><b><div class="cell">{{ i.wednesday }}</div> <div class="teacher">{{ i.teacher_room3}}</div></b></th>
+            <th><b><div class="cell">{{ i.thursday }}</div> <div class="teacher">{{ i.teacher_room4}}</div></b></th>
+            <th><b><div class="cell">{{ i.friday }}</div> <div class="teacher">{{ i.teacher_room5}}</div></b></th>
+                
+            </tr>
+        {% endfor %}
+
+    </table>
+
+
+{% endblock %}
+
+
+
+   

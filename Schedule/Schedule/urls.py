@@ -21,4 +21,6 @@ urlpatterns = [
     path('', include('App.urls')),
     path('1 course/', include('firstcourse.urls')),
     path('2 course/', include('secondcourse.urls')),
+    path('3 course/', include('thirdcourse.urls')),
+    path('4 course/', include('fourthcourse.urls')),
 ]

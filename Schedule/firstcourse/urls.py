@@ -18,6 +18,7 @@ urlpatterns = [
     path('ТДНГ 1-22', views.TDNG_1_22),
     path('ПО 2-22', views.PO_2_22),
     path('ХТП 3-22', views.XTP_3_22),
-    path('ПО 3-22', views.PO_3_22)
+    path('ПО 3-22', views.PO_3_22),
+
 
 ]

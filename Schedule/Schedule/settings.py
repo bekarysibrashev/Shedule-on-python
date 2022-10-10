@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'import_export',
     'firstcourse',
     'secondcourse',
-    'thirdcourse'
+    'thirdcourse',
+    'fourthcourse'
 ]
 
 MIDDLEWARE = [

@@ -32,6 +32,7 @@ class Schedule1(models.Model):
 
     time = models.CharField('time', max_length=100, default='Time')
 
+    day = models.CharField('date', max_length=100, default='Date')
 
 # from django.db import models
 

@@ -31,13 +31,13 @@
         {% for i in schedule %}    
         <tr class='success'>       
             <th class="tim">{{ i.time }}</th>
-            <th><b><div class="cell">{{ i.monday }}</div>{{i.teacher_room1}}</b></th>
-            <th><b><div class="cell">{{ i.tuesday }}</div> {{ i.teacher_room2}}</b></th>
-            <th><b><div class="cell">{{ i.wednesday }}</div> {{ i.teacher_room3}}</b></th>
-            <th><b><div class="cell">{{ i.thursday }}</div> {{ i.teacher_room4}}</b></th>
-            <th><b><div class="cell">{{ i.friday }}</div> {{ i.teacher_room5}}</b></th>
-            
-        </tr>
+            <th><b><div class="cell">{{ i.monday }}</div> <div class="teacher">{{ i.teacher_room1}}</div></b></th>
+            <th><b><div class="cell">{{ i.tuesday }}</div> <div class="teacher">{{ i.teacher_room2}}</div></b></th>
+            <th><b><div class="cell">{{ i.wednesday }}</div> <div class="teacher">{{ i.teacher_room3}}</div></b></th>
+            <th><b><div class="cell">{{ i.thursday }}</div> <div class="teacher">{{ i.teacher_room4}}</div></b></th>
+            <th><b><div class="cell">{{ i.friday }}</div> <div class="teacher">{{ i.teacher_room5}}</div></b></th>
+                
+            </tr>
         {% endfor %}
 
     </table>
